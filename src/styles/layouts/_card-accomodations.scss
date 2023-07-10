@@ -1,0 +1,39 @@
+.Card {
+    height: 340px;
+    width: 340px;
+    border-radius: 25px;
+    position: relative;
+    padding: 0;
+    margin-right: 50px;
+
+    &__img {
+        height: 340px;
+        max-width: 340px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        bottom: 10px;
+        left: 10px;
+        font-weight: 500;
+        font-size: 18px;
+
+
+    }
+
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    filter: saturate(300%) brightness(150%);
+}

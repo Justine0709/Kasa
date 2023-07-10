@@ -1,0 +1,34 @@
+.Banner {
+  position: relative;
+  height: 223px;
+  color: white;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20Px;
+  margin-left: 60px;
+  margin-right: 60px;
+  &__title{
+    position: relative;
+    z-index: 1;
+
+  }
+}
+
+.Banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./IMG.png");
+  background-repeat: no-repeat;
+  background-position: 0% 53%;
+  background-size: cover;
+  filter: brightness(70%);
+  border-radius: 20px;
+}
+
