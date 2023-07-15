@@ -1,0 +1,22 @@
+.Contenair {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &__tags {
+        min-width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: $main-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}

@@ -1,0 +1,52 @@
+.collapse-contenair {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    gap:30px
+}
+
+.collapse-contenair2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;  
+}
+
+.collapse--accommodation{
+    width: 50%;
+}
+
+.collapse {
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
+        font-size: 24px;
+        font-weight: 500;
+        background-color: $main-color;
+        color: white;
+        border-radius: 10px 10px 5px 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__text {
+        position: relative;
+        top: -5px;
+        z-index: -1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #E3E3E3;
+        color: $main-color;
+        border-radius: 0px 0px 5px 5px;
+
+    }
+}

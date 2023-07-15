@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='Footer'>
-            <img className="Footer__Logo" src="LOGO2.png" alt ="logo kasa"></img>
+            <img className="Footer__Logo" src="../LOGO2.png" alt ="logo kasa"></img>
             <div>
             © 2020 Kasa. All rights reserved
             </div>

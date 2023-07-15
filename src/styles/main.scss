@@ -1,7 +1,7 @@
-@import"./Base/base";
 @import"./Utils/fonctions";
 @import"./Utils/mixins";
 @import"./Utils/variables";
+@import"./Base/base";
 @import "./components/logo";
 @import "./components/navigation";
 @import"./layouts/header";
@@ -9,6 +9,13 @@
 @import "./layouts/gallery";
 @import "./layouts/Footer";
 @import "./layouts/card-accomodations";
+@import "./components/caroussel";
+@import "./components/tags";
+@import "./pages/Accommodation.scss";
+@import "./components/rating";
+@import "./components/collapse";
+@import"./pages/error404";
+
 
 
 

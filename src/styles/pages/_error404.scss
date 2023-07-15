@@ -1,0 +1,22 @@
+.Page_error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:70px;
+
+    &__logo {
+        width: 597px;
+        height: 263px;
+    }
+
+    &__comment{
+        color:$main-color;
+        font-weight:500;
+        font-size: 36px;
+    }
+    &__NavHome{
+        color: $main-color;
+        text-decoration: none;
+
+    }
+}
