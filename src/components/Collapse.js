@@ -1,20 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
 
+
 const Collapse = ({ Description, title }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
+
+
   const url = window.location.pathname;
 
   let collapseClass = 'collapse';
-    if (url.includes('Accommodation')) {
-      collapseClass += '--accommodation';
-    } else   {
-      collapseClass += '';
-    }
+  if (url.includes('Accommodation')) {
+    collapseClass += '--accommodation';
+  } else {
+    collapseClass += '';
+  }
 
 
   return (
@@ -26,9 +30,9 @@ const Collapse = ({ Description, title }) => {
           className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
         ></i>
       </div>
-      {isOpen && (
-        <div className="collapse__text">
-          {typeof Description === 'string' ? (
+      <div className={`collapse__text ${isOpen ? 'open' : ''}`}>
+        {isOpen && (
+          typeof Description === 'string' ? (
             <p>{Description}</p>
           ) : (
             <ul>
@@ -36,9 +40,11 @@ const Collapse = ({ Description, title }) => {
                 <ul key={index}>{item}</ul>
               ))}
             </ul>
-          )}
-        </div>
-      )}
+          )
+        )}
+      </div>
+
+
     </div>
   );
 };
