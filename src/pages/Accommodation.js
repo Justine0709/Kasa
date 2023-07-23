@@ -38,7 +38,7 @@ const Accommodation = () => {
                     <h4 className='Accommodation__informations__subtitle'>{accommodationData.location}</h4>
                     <Tags tags={accommodationData.tags} />
                 </div>
-                <div>
+                <div className='contenairHostandRating'>
                     <div className='Accommodation__informations__host'>
                         <p className='Accommodation__informations__host__name'>{accommodationData.host.name}</p>
                         <img className='Accommodation__informations__host__picture' src={accommodationData.host.picture} alt={accommodationData.host.name} />

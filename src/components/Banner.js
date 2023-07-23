@@ -2,18 +2,19 @@ import React from 'react';
 
 
 const Banner = () => {
-    const url = window.location.pathname; 
+    const url = window.location.pathname;
 
     let bannerClass = 'Banner';
     if (url.includes('About')) {
         bannerClass += ' Banner-about';
-    } else   {
+    } else {
         bannerClass += ' Banner-home';
     }
     return (
         <div className={`Banner ${bannerClass}`}>
             <h1 className="Banner__title">
-            Chez vous, partout et ailleurs
+                <p>Chez vous,</p>
+                <p> partout et ailleurs</p>           
             </h1>
         </div>
     );

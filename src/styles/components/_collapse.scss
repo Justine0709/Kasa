@@ -4,20 +4,28 @@
     margin-right: 100px;
     margin-bottom: 60px;
     justify-content: space-between;
-    gap: 30px
+    gap: 30px;
+    @media (max-width: 768px) {
+        margin-right:20px;
+        margin-left:20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap:0
+    }
 }
 
-.collapse-contenair2 {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.collapse-contenair2{
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 
 .collapse--accommodation {
     width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+       
+    }
 }
 
 .collapse {
@@ -26,7 +34,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 52px;
+        height: 30px;
         font-size: 24px;
         font-weight: 500;
         background-color: $main-color;
@@ -34,6 +42,9 @@
         border-radius: 10px 10px 5px 5px;
         padding-left: 10px;
         padding-right: 10px;
+        @media (max-width: 768px) {
+           font-size: 13px;
+        }
     }
 
     &__text {
@@ -50,6 +61,9 @@
         transform: scaleY(0);
         transform-origin: top;
         transition: transform 0.5s;
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
 
     }
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Collapse = ({ Description, title }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [animate, setAnimate] = useState(false);
+  
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);

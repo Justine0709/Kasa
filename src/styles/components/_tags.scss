@@ -5,7 +5,7 @@
 
     &__tags {
         min-width: 115px;
-        height: 25px;
+    
         border-radius: 10px;
         background-color: $main-color;
         color: white;
@@ -17,6 +17,12 @@
         font-weight: 500;
         padding-left: 5px;
         padding-right: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+            width: 84px;
+            height: 18px;
+        }
     }
 
 }

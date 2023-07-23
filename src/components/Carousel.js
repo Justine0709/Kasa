@@ -24,6 +24,10 @@ function Carousel({ images, title }) {
             onClick={incrementCount}
             className={`Carousel__chevron Carousel__chevron-right fa-solid fa-chevron-right`}
           ></i>
+          <div className='Carousel__counter'>
+          {count + 1}/{images.length}
+        
+          </div>
         </>
       )}
     </div>

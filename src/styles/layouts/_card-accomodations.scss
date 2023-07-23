@@ -5,6 +5,11 @@
     position: relative;
     padding: 0;
     margin-right: 50px;
+    @media (max-width: 768px) {
+        margin-right: 0;
+        width: 100%;
+    }
+   
     &__img {
         height: 340px;
         max-width: 340px;

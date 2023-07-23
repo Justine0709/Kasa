@@ -5,7 +5,7 @@ body {
   margin-right: 0;
 }
 
-h3, h4, h5 {
+h3, h4, h5, p {
   margin: 0;
 }
 
@@ -27,11 +27,22 @@ ul {
   width: 210px;
   height: 68px;
 }
+@media (max-width: 768px) {
+  .Logo {
+    width: 145px;
+    height: 46px;
+  }
+}
 
 .NavLink {
   text-decoration: none;
   list-style: none;
   color: #FF6060;
+}
+@media (max-width: 768px) {
+  .NavLink {
+    font-size: 12px;
+  }
 }
 
 .nav-active {
@@ -43,6 +54,12 @@ ul {
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
+}
+@media (max-width: 768px) {
+  .Header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .Navigation {
@@ -62,10 +79,26 @@ ul {
   margin-left: 100px;
   margin-right: 100px;
 }
+@media (max-width: 768px) {
+  .Banner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .Banner__title {
   position: relative;
   z-index: 1;
   font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+@media (max-width: 768px) {
+  .Banner__title {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
 }
 
 .Banner-home::before {
@@ -109,8 +142,15 @@ ul {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 30px;
   padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .Gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    margin-top: 20px;
+  }
 }
 
 .Gallery ul {
@@ -132,6 +172,11 @@ ul {
   width: 122px;
   height: 39px;
 }
+@media (max-width: 768px) {
+  .Footer__informations {
+    width: 133px;
+  }
+}
 
 .Card {
   height: 340px;
@@ -140,6 +185,12 @@ ul {
   position: relative;
   padding: 0;
   margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .Card {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 .Card__img {
   height: 340px;
@@ -169,7 +220,6 @@ ul {
 }
 
 .Carousel {
-  width: 1240px;
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
@@ -178,18 +228,35 @@ ul {
   border-radius: 25px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .Carousel {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 255px;
+  }
+}
 .Carousel__img {
-  width: 1240px;
+  width: 100%;
   height: 415px;
   object-fit: cover;
   border-radius: 10px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .Carousel__img {
+    height: 255px;
+  }
 }
 .Carousel__chevron {
   color: white;
   position: absolute;
   top: 50%;
   font-size: 48px;
+}
+@media (max-width: 768px) {
+  .Carousel__chevron {
+    font-size: 24px;
+  }
 }
 .Carousel__chevron-left {
   left: 10%;
@@ -205,7 +272,6 @@ ul {
 }
 .Contenair__tags {
   min-width: 115px;
-  height: 25px;
   border-radius: 10px;
   background-color: #FF6060;
   color: white;
@@ -218,6 +284,13 @@ ul {
   padding-left: 5px;
   padding-right: 5px;
 }
+@media (max-width: 768px) {
+  .Contenair__tags {
+    font-size: 10px;
+    width: 84px;
+    height: 18px;
+  }
+}
 
 .Accommodation__informations {
   margin-left: 100px;
@@ -228,22 +301,50 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 768px) {
+  .Accommodation__informations {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+}
 .Accommodation__informations__title {
   color: #FF6060;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .Accommodation__informations__title {
+    font-size: 18px;
+  }
+}
 .Accommodation__informations__subtitle {
   color: #FF6060;
+}
+@media (max-width: 768px) {
+  .Accommodation__informations__subtitle {
+    font-size: 14px;
+  }
 }
 .Accommodation__informations__host {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .Accommodation__informations__host {
+    align-items: flex-end;
+  }
+}
 .Accommodation__informations__host__picture {
   width: 64px;
   height: 64px;
   border-radius: 60px;
+}
+@media (max-width: 768px) {
+  .Accommodation__informations__host__picture {
+    width: 40px;
+    height: 40px;
+  }
 }
 .Accommodation__informations__host__name {
   text-align: end;
@@ -253,11 +354,33 @@ ul {
   width: 93px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .Accommodation__informations__host__name {
+    font-size: 12px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenairHostandRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 
 .rating__star {
   font-size: 26px;
   margin-left: 5px;
   color: #E3E3E3;
+}
+@media (max-width: 768px) {
+  .rating__star {
+    font-size: 14px;
+  }
 }
 
 .rating__active {
@@ -272,18 +395,28 @@ ul {
   justify-content: space-between;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .collapse-contenair {
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0;
+  }
+}
 
 .collapse-contenair2 {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .collapse--accommodation {
   width: 50%;
+}
+@media (max-width: 768px) {
+  .collapse--accommodation {
+    width: 100%;
+  }
 }
 
 .collapse__title {
@@ -291,7 +424,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 52px;
+  height: 30px;
   font-size: 24px;
   font-weight: 500;
   background-color: #FF6060;
@@ -299,6 +432,11 @@ ul {
   border-radius: 10px 10px 5px 5px;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media (max-width: 768px) {
+  .collapse__title {
+    font-size: 13px;
+  }
 }
 .collapse__text {
   position: relative;
@@ -314,6 +452,11 @@ ul {
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.5s;
+}
+@media (max-width: 768px) {
+  .collapse__text {
+    font-size: 13px;
+  }
 }
 
 .collapse__text.open {
