@@ -30,7 +30,7 @@ const Collapse = ({ Description, title }) => {
           className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
         ></i>
       </div>
-      <div className={`collapse__text ${isOpen ? 'open' : ''}`}>
+      <div className={`collapse__text ${isOpen ? 'open' : 'close'}`}>
         {isOpen && (
           typeof Description === 'string' ? (
             <p>{Description}</p>
