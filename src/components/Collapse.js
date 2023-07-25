@@ -31,7 +31,7 @@ const Collapse = ({ Description, title }) => {
         ></i>
       </div>
       <div className={`collapse__text ${isOpen ? 'open' : 'close'}`}>
-        {isOpen && (
+        {
           typeof Description === 'string' ? (
             <p>{Description}</p>
           ) : (
@@ -41,7 +41,7 @@ const Collapse = ({ Description, title }) => {
               ))}
             </ul>
           )
-        )}
+        }
       </div>
 
 
