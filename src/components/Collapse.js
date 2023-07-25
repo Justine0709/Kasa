@@ -27,10 +27,11 @@ const Collapse = ({ Description, title }) => {
         <h5>{title}</h5>
         <i
           onClick={toggleOpen}
-          className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}
+          className={`fa-solid ${isOpen ? 'fa-chevron-up rotate-chevron-open' : 'fa-chevron-up rotate-chevron-close'}`}
+          
         ></i>
       </div>
-      <div className={`collapse__text ${isOpen ? 'open' : 'close'}`}>
+      <div className={`collapse__text ${isOpen ? 'open' : ''}`}>
         {
           typeof Description === 'string' ? (
             <p>{Description}</p>

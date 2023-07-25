@@ -69,24 +69,43 @@
         border-radius: 0px 0px 5px 5px;
         transform: scaleY(0);
         transform-origin: top;
-        transition: transform 1s;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-
+        transition: all 0.5s;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
 
     }
+
 }
+
 
 .collapse__text.open {
     transform: scaleY(1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height:300px;
+    opacity: 1;
     
+
+
+
 }
 
 .collapse__text.close {
     transform: scaleY(0);
-    
-
-
-
+    height: 0; /* Masquer complètement le contenu en réduisant la max-height à 0 */
+    opacity: 0; 
 }
+
+.rotate-chevron-open {
+    transition: transform 0.5s;
+    transform: rotate(-180deg); 
+  }
+  
+  
+  .rotate-chevron-close {
+    transition: transform 0.5s; 
+    transform: rotate(0deg); 
+  }
+  
+  
