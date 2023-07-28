@@ -4,12 +4,13 @@ import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
 import { AboutList } from '../datas/AboutList';
+import Image from './IMG-about.png';
 
 const About = () => {
     return (
         <div>
             <Header/>
-            <Banner/>
+            <Banner image={Image}/>
             <div className='collapse-contenair2'>
             <Collapse title={'Fiabilité'} Description={AboutList[0].Fiability}/>
             <Collapse title={"Respect"} Description={AboutList[1].Respect}/> 

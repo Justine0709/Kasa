@@ -2,25 +2,15 @@ import React from 'react';
 
 
 
-const Banner = () => {
-    const url = window.location.pathname;
-    const isHomePage = url === '/';
+const Banner = ({image,texte}) => {
+    
 
-    let bannerClass = 'Banner';
-    if (url.includes('About')) {
-        bannerClass += ' Banner-about';
-    } else {
-        bannerClass += ' Banner-home';
-    }
     return (
-        <div className={`Banner ${bannerClass}`}>
-            {isHomePage && ( 
-                <h1 className="Banner__title">
-                    <p>Chez vous,</p>
-                    <p> partout et ailleurs</p>
-                </h1>
-            )}
+        <div className='Banner'>
+            <div className='Banner__text'>{texte}</div>
+            <img className="Banner__img" src={image} alt="paysage"></img>
         </div>
+
     );
 };
 
