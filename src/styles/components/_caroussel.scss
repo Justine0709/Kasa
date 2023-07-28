@@ -20,28 +20,32 @@
         object-fit: cover;
         border-radius: 10px;
         position: relative;
+
         @media (max-width: 768px) {
             height: 255px;
         }
-     
+
     }
-   &__counter{
-    position: absolute;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    top: 90%;
-    z-index:2;
-    @media (max-width: 768px) {
-       display:none
+
+    &__counter {
+        position: absolute;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        top: 90%;
+        z-index: 2;
+
+        @media (max-width: 768px) {
+            display: none
+        }
     }
-   }
 
     &__chevron {
         color: white;
         position: absolute;
         top: 50%;
-        font-size: 48px;
+        font-size: 78px;
+
         @media (max-width: 768px) {
             font-size: 24px;
         }
@@ -49,11 +53,17 @@
     }
 
     &__chevron-left {
-        left: 10%
+        left: 120px;
+        @media (max-width: 768px) {
+            left:10%
+        }
     }
 
     &__chevron-right {
-        right: 10%;
+        right: 120px;
+        @media (max-width: 768px) {
+            right:10%;
+        }
 
 
     }

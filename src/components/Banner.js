@@ -1,8 +1,10 @@
 import React from 'react';
 
 
+
 const Banner = () => {
     const url = window.location.pathname;
+    const isHomePage = url === '/';
 
     let bannerClass = 'Banner';
     if (url.includes('About')) {
@@ -12,10 +14,12 @@ const Banner = () => {
     }
     return (
         <div className={`Banner ${bannerClass}`}>
-            <h1 className="Banner__title">
-                <p>Chez vous,</p>
-                <p> partout et ailleurs</p>           
-            </h1>
+            {isHomePage && ( 
+                <h1 className="Banner__title">
+                    <p>Chez vous,</p>
+                    <p> partout et ailleurs</p>
+                </h1>
+            )}
         </div>
     );
 };
