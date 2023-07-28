@@ -7,12 +7,14 @@ import Footer from '../components/Footer';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
+import Error404 from './Error404';
 
 
 
 const Accommodation = () => {
 
     const { id } = useParams();
+    
 
 
     const accommodationData = AccommodationsList.find(
@@ -24,7 +26,8 @@ const Accommodation = () => {
 
 
     if (!accommodationData) {
-        return <p></p>;
+      
+        return <Error404 />;
     }
 
     return (
